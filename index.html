@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Scubaduiken</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Merriweather+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/terraformer"></script>
+        <script src="https://unpkg.com/@terraformer/wkt"></script>
+
+    </head>
+    <body>
+        <section id="deel0">
+            <img src="images/scubadiving-white.png" class="logo">
+            <div class="banner-text">
+                <h1>Scubaduiken</h1>
+                <p>Mijn duikervaringen en nog veel meer!</p>
+            </div>
+        </section>
+
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="#deel0">Homepagina</a></li>
+                    <li><a href="#deel1">Warm water koraalriffen</a></li>
+                    <li><a href="#deel2">Datavisualisaties</a></li>
+                    <li><a href="#deel3">Mijn duikervaring</a></li>
+                    <li><a href="#deel4">Top 10 duikbestemmingen</a></li>
+                    <li><a href="#deel5">Oceaanreliëf</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+
+        <!--Deel1--> 
+        
+        <section id="deel1">
+            <div class="title-text">
+                <p>Deel 1</p>
+                <h1>Warm water koraalriffen</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Koraalriffen, Zeetemperatuurstijging en Duikdiploma's </h1>
+                    <div class="features-desc">
+                        <div class="feature-text"></div>
+                        <p>Als je op zoek bent naar de beste locaties om te duiken in warm water koraal riffen, dan hoef je niet verder te zoeken dan onze prachtige planeet. Over de hele wereld zijn er talloze adembenemende duikplekken te vinden waar je kunt genieten van de schoonheid van de onderwaterwereld. In de kaart hiernaast zijn alle warm water koraalriffen te zien. Dit zijn koraalriffen die voorkomen in tropische en subtropische zeeën en oceanen waar de watertemperatuur over het algemeen hoger is dan 20°C. Deze riffen bieden een thuis aan vissen, kreeften, schelpdieren en andere zeedieren.
+                            <br><br>
+                            In de grafiek hieronder is te zien dat sinds 1979 de gemiddelde zeetemperatuur is gaan stijgen. Dat lijkt misschien lekker, maar koraal is gewend aan de afwisseling van temperatuur per seizoen. Wanneer het water te lang te warm blijft, gaat het verbleken. Hierdoor sterft het af en verliezen miljarden zeewezens hun huis.
+                            <br><br>
+                            De temperatuur stijgt, en zo stijgt ook het aandeel jongen mensen die hun duikbrevet halen. Zoals te zien is in de tweede datavisualisatie. Dit brengt toch iets positiefs mee. Jonge mensen zien eerder het belang van de oceaan in dan oudere mensen. Het is belangrijker dan ooit om ons bewust te zijn van de impact die we hebben op deze kwetsbare ecosystemen. Van jonge mensen wordt eerder verwacht dat ze weten wat er speelt en ook hoe ze kunnen helpen om het probleem tegen te gaan.
+                            </p>
+                    </div>
+                </div> 
+                <div class="features-img">
+                    <div id="map1"></div>
+                </div> 
+            </div>
+
+        </section>
+
+        <!--Deel2-->
+
+        <section id="deel2">
+            <div class="title-text">
+                <p>Deel 2</p>
+                <h1>Datavisualisaties</h1>
+            </div>
+            <div class="service-box">
+                <div class="single-service">
+                    <iframe title="Average Global Sea Surface Temperature 1880-2020" aria-label="Interactive area chart" id="datawrapper-chart-K9Dmi" src="https://datawrapper.dwcdn.net/K9Dmi/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                    <div class="service-desc">   
+                        <hr>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <iframe title="PADI Worldwide Certification Trend By Age Group" aria-label="Stacked Column Chart" id="datawrapper-chart-XjFpD" src="https://datawrapper.dwcdn.net/XjFpD/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                    <div class="service-desc">
+                        <hr>
+                </div>
+            </div>
+        </section>
+
+        <!--Deel3-->
+
+        <section id="deel3">
+            <div class="title-text">
+                <p>Deel 3</p>
+                <h1>Mijn duikervaring</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Thailand, Bonaire en Griekenland</h1>
+                    <div class="features-desc">
+                        <div class="feature-text"></div>
+                        <p>Gelukkig zijn er nog steeds prachtige plekken om te duiken, zoals de drie locaties waar ik zelf gedoken heb. Op de kaart zie je deze plekken duidelijk aangegeven. Ik heb mijn duikbrevet gehaald in 2018 op Koh Taoh in Thailand. Daarna heb ik in 2020 weer gedoken op Bonaire. En tijdens een vakantie in 2021 in Griekenland was de laatste keer. Wanneer je op de punten klikt op de kaart, is er ook nog te zien hoe vaak ik op elke locatie gedoken heb.
+                            <br><br>
+                            Als ik een keus zo moeten maken voor de mooiste plek waar ik heb gedoken. Is dat naar mijn mening Thailand. Door het tropische klimaat daar, was de zeebodem echt ongelofelijk kleurrijk. Vlak daarna Bonaire. Eigenlijk bijna even mooi. Griekenland heeft geen warm water koraalriffen. Hierdoor is er ook een stuk minder te zien tijdens het duiken hier. Het water is erg troebel en kleurrijk koraal is schaars. Desalniettemin is het nog steeds een mooie ervaring om in Europa te kunnen duiken.
+                            </p>
+                    </div>
+                </div> 
+                <div class="features-img">
+                    <div id="arcgistest"></div>
+                </div> 
+            </div>
+
+        </section>
+
+        <!--Deel4-->
+
+        <section id="deel4">
+            <div class="title-text">
+                <p>Deel 4</p>
+                <h1>Top 10 duikbestemmingen</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Wat zijn de beste duikplekken?</h1>
+                    <div class="features-desc">
+                        <div class="feature-text"></div>
+                        <p>Wanneer je op zoek bent naar nog meer geweldige duikplekken, dan zijn er tal van landen die bekend staan om hun geweldige duikomstandigheden. One World 365heeft een lijst samengesteld waarvan met de top 10 duiklanden (The 10 Best Countries to Go Scuba Diving, z.d.).  Daarnaast zijn ze ook te zien op de kaart rechts.</p>
+                      </div>
+                      <ul class="top10">
+                        <li>Australië</li>
+                        <li>Egypte</li>
+                        <li>Verenigde Staten</li>
+                        <li>Honduras</li>
+                        <li>Thailand</li>
+                        <li>Belize</li>
+                        <li>Galapagos Eilanden (Ecuador)</li>
+                        <li>Zuid-Afrika</li>
+                        <li>Mexico</li>
+                        <li>Fiji</li>
+                      </ul>
+                      
+                </div> 
+                <div class="features-img">
+                    <div id="maplibrekaart"></div>
+                </div> 
+            </div>
+
+        </section>
+
+        <!--Deel5-->
+
+        <section id="deel5">
+            <div class="title-text">
+                <p>Deel 5</p>
+                <h1>Oceaanreliëf</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>General Bathymetric Chart of the Oceans</h1>
+                    <div class="features-desc">
+                        <div class="feature-text"></div>
+                        <p>En tot slot, als je echt de diepte in wilt duiken, is er nog de General Bathymetric Chart of the Oceans (GEBCO) grid kaart. Deze kan worden gebruikt om de diepte en het reliëf van de zeebodem te visualiseren. Het is fascinerend om te zien hoe de oceaanbodem eruitziet en hoe deze kan variëren van locatie tot locatie. Hoe donkerder blauw de kaart is, hoe dieper de oceaan op die plek is.
+                            <br><br>
+                            Duikers gebruiken de kaart om duiklocaties te verkennen en de diepte van het water te bepalen. Wetenschappers gebruiken de kaart om de topografie van de oceaanbodem te bestuderen en te begrijpen hoe deze zich ontwikkelt en verandert door de tijd heen (General Bathymetric Chart of the Oceans [GEBCO], z.d.).
+                            </p>
+                    </div>
+                </div> 
+                <div class="features-img">
+                    <div id="openlayerkaart"></div>
+                </div> 
+            </div>
+
+            
+
+        </section>
+
+        
+
+        <script src="https://js.arcgis.com/4.26/"></script>
+        <script src="./javascript.js"></script>   
+
+
+    </body>
+
+</html>
